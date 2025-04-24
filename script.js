@@ -68,7 +68,7 @@ typedef struct {
     int age;
 } Person;
 
-// Simulate constructor overloading with different init functions
+
 void initPersonDefault(Person *p) {
     strcpy(p->name, "aayush");
     p->age = 0;
@@ -89,7 +89,6 @@ void initPersonWithNameAge(Person *p, const char *name, int age) {
 int main() {
     Person p1, p2, p3;
 
-    // Call different init functions to simulate overloading
     initPersonDefault(&p1);
     initPersonWithName(&p2, "Alice");
     initPersonWithNameAge(&p3, "Bob", 30);
@@ -105,7 +104,6 @@ int main() {
     'btn3': {
         code: `#include <stdio.h>
 
-// Function to find the maximum element in an array
 int findMax(int arr[], int size) {
     if (size <= 0) return -1; // Handle empty or invalid size array
     int max = arr[0];
@@ -120,17 +118,14 @@ int main() {
     int n;
 
     printf("Enter number of elements: ");
-    // In a real scenario, you'd get input. Here we simulate.
+  
     // scanf("%d", &n);
     n = 5; // Simulated input
     printf("%d\n", n);
 
     int arr[n]; 
     printf("Enter %d elements:\n", n);
-    // Simulate entering elements
-    // for(int i = 0; i < n; i++) {
-    //     scanf("%d", &arr[i]);
-    // }
+    }
     arr[0] = 10; arr[1] = 5; arr[2] = 25; arr[3] = 15; arr[4] = 30;
     printf("10 5 25 15 30\n"); // Show simulated input
 

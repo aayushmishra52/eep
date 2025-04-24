@@ -76,13 +76,13 @@ void initPersonDefault(Person *p) {
 
 void initPersonWithName(Person *p, const char *name) {
     strncpy(p->name, name, sizeof(p->name)-1);
-    p->name[sizeof(p->name)-1] = '\0'; // Ensure null termination
+    p->name[sizeof(p->name)-1] = '\0'; 
     p->age = 0;
 }
 
 void initPersonWithNameAge(Person *p, const char *name, int age) {
     strncpy(p->name, name, sizeof(p->name)-1);
-    p->name[sizeof(p->name)-1] = '\0'; // Ensure null termination
+    p->name[sizeof(p->name)-1] = '\0'; 
     p->age = age;
 }
 
@@ -105,7 +105,7 @@ int main() {
         code: `#include <stdio.h>
 
 int findMax(int arr[], int size) {
-    if (size <= 0) return -1; // Handle empty or invalid size array
+    if (size <= 0) return -1; 
     int max = arr[0];
     for(int i = 1; i < size; i++) {
         if(arr[i] > max)
@@ -120,15 +120,14 @@ int main() {
     printf("Enter number of elements: ");
   
     // scanf("%d", &n);
-    n = 5; // Simulated input
+    n = 5; 
     printf("%d\n", n);
 
     int arr[n]; 
     printf("Enter %d elements:\n", n);
     }
     arr[0] = 10; arr[1] = 5; arr[2] = 25; arr[3] = 15; arr[4] = 30;
-    printf("10 5 25 15 30\n"); // Show simulated input
-
+    printf("10 5 25 15 30\n"); 
     int maxElement = findMax(arr, n);
     printf("Maximum element in the array is: %d\n", maxElement);
 
